@@ -1,0 +1,30 @@
+#e1(08Oct2024:19:39:45): source ./xcelium.d/env.d/env.history.08Oct2024_19_39_45
+s1(08Oct2024:19:39:45):  xrun -f run.f 
+#e2(08Oct2024:19:40:08): source ./xcelium.d/env.d/env.history.08Oct2024_19_40_08
+s2(08Oct2024:19:40:08):  xrun -f run.f -gui -access rwc 
+#e3(08Oct2024:19:41:07): source ./xcelium.d/env.d/env.history.08Oct2024_19_41_07
+s3(08Oct2024:19:41:07):  xrun -f run.f -gui -access rwc "-s " 
+#e4(08Oct2024:19:47:01): source ./xcelium.d/env.d/env.history.08Oct2024_19_47_01
+s4(08Oct2024:19:47:01):  xrun -f run.f -gui -access rwc -s 
+#e5(08Oct2024:19:48:10): source ./xcelium.d/env.d/env.history.08Oct2024_19_48_10
+s5(08Oct2024:19:48:10):  xrun -f run.f -gui -access rwc -s 
+#e6(08Oct2024:19:52:11): source ./xcelium.d/env.d/env.history.08Oct2024_19_52_11
+s6(08Oct2024:19:52:11):  xrun -f run.f -gui -access rwc -s 
+#e7(08Oct2024:19:53:14): source ./xcelium.d/env.d/env.history.08Oct2024_19_53_14
+s7(08Oct2024:19:53:14):  xrun -f run.f -gui -access rwc -s 
+#e8(08Oct2024:19:54:02): source ./xcelium.d/env.d/env.history.08Oct2024_19_54_02
+s8(08Oct2024:19:54:02):  xrun -f run.f -gui -access rwc "-s " 
+#e9(08Oct2024:19:58:20): source ./xcelium.d/env.d/env.history.08Oct2024_19_58_20
+s9(08Oct2024:19:58:20):  xrun -f run.f -gui -access rwc -s 
+#e10(08Oct2024:20:00:36): source ./xcelium.d/env.d/env.history.08Oct2024_20_00_36
+s10(08Oct2024:20:00:36):  xrun -f run.f -gui -access rwc -s 
+#e11(08Oct2024:20:01:21): source ./xcelium.d/env.d/env.history.08Oct2024_20_01_21
+s11(08Oct2024:20:01:21):  xrun -f run.f -gui -access rwc -s 
+#e12(24Nov2024:15:20:07): source ./xcelium.d/env.d/env.history.24Nov2024_15_20_07
+s12(24Nov2024:15:20:07):  xrun -f run.f -gui -access rwc 
+#e13(24Nov2024:15:54:16): source ./xcelium.d/env.d/env.history.24Nov2024_15_54_16
+s13(24Nov2024:15:54:16):  xrun -f run.f -gui -access rwc 
+#e14(24Nov2024:15:58:35): source ./xcelium.d/env.d/env.history.24Nov2024_15_58_35
+s14(24Nov2024:15:58:35):  xrun -f run.f -gui -access rwc 
+#e15(24Nov2024:16:00:29): source ./xcelium.d/env.d/env.history.24Nov2024_16_00_29
+s15(24Nov2024:16:00:29):  xrun -f run.f -gui -access rwc "-s " 

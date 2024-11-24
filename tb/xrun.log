@@ -1,0 +1,213 @@
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s004: Started on Nov 24, 2024 at 16:00:28 UTC
+xrun
+	-f run.f
+		-64
+		-uvmhome /tools/cadence/XCELIUM/24.03.004/tools/methodology/UVM/CDNS-1.1d
+		-timescale 1ns/1ns
+		+UVM_TESTNAME=simple_test
+		+UVM_VERBOSITY=UVM_LOW
+		+SVSEED=random
+		-incdir ../sv
+		-incdir ../../clock_and_reset/sv
+		../sv/apb_pkg.sv
+		../sv/apb_if.sv
+		tb_top.sv
+		hw_top.sv
+		../apb_dut.sv
+	-gui
+	-access rwc
+	-s
+
+   User defined plus("+") options:
+	+UVM_VERBOSITY=UVM_LOW
+
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+SVSEED set randomly from command line: 344518259
+xcelium> 
+xcelium> source /tools/cadence/XCELIUM/24.03.004/tools/xcelium/files/xmsimrc
+xcelium> source /tools/cadence/XCELIUM/24.03.004/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> 
+-------------------------------------
+Relinquished control to SimVision...
+# Restoring simulation environment...
+xcelium> input -quiet .reinvoke.sim
+xcelium> file delete .reinvoke.sim
+xcelium> probe -create -shm hw_top.p_if.paddr hw_top.p_if.pclk hw_top.p_if.penable hw_top.p_if.prdata hw_top.p_if.pready hw_top.p_if.psel hw_top.p_if.pwdata hw_top.p_if.pwrite hw_top.p_if.rst_n
+Created default SHM database xcelium.shm
+Created probe 1
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (24.03-s004)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test simple_test...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------------
+Name                           Type                     Size  Value     
+------------------------------------------------------------------------
+uvm_test_top                   simple_test              -     @2659     
+  testbench                    apb_tb                   -     @2743     
+    env                        apb_env                  -     @2776     
+      agent                    apb_agent                -     @2807     
+        driver                 apb_driver               -     @2875     
+          rsp_port             uvm_analysis_port        -     @3028     
+            recording_detail   integral                 32    'd1       
+          seq_item_port        uvm_seq_item_pull_port   -     @2977     
+            recording_detail   integral                 32    'd1       
+          recording_detail     integral                 32    'd1       
+        monitor                apb_monitor              -     @2842     
+          item_collected_port  uvm_analysis_port        -     @2896     
+            recording_detail   integral                 32    'd1       
+          recording_detail     integral                 32    'd1       
+        sequencer              apb_sequencer            -     @3058     
+          rsp_export           uvm_analysis_export      -     @3116     
+            recording_detail   integral                 32    'd1       
+          seq_item_export      uvm_seq_item_pull_imp    -     @3664     
+            recording_detail   integral                 32    'd1       
+          recording_detail     integral                 32    'd1       
+          arbitration_queue    array                    0     -         
+          lock_queue           array                    0     -         
+          num_last_reqs        integral                 32    'd1       
+          num_last_rsps        integral                 32    'd1       
+        is_active              uvm_active_passive_enum  1     UVM_ACTIVE
+        recording_detail       integral                 32    'd1       
+      recording_detail         integral                 32    'd1       
+    recording_detail           integral                 32    'd1       
+------------------------------------------------------------------------
+
+SDI/Verilog Transaction Recording Facility Version 24.03-s004
+UVM_INFO ../sv/apb_driver.sv(29) @ 0: uvm_test_top.testbench.env.agent.driver [driver] run_phase
+UVM_INFO ../sv/apb_seqs.sv(43) @ 0: uvm_test_top.testbench.env.agent.sequencer@@apb_base_seq [apb_base_seq] Executing apb_simple_seq sequence
+UVM_INFO ../sv/apb_driver.sv(45) @ 300: uvm_test_top.testbench.env.agent.driver [driver] seq_item_port.get_next_item(req);
+UVM_INFO ../sv/apb_if.sv(37) @ 300: reporter [[interface]] master_send_to_dut
+UVM_INFO ../sv/apb_monitor.sv(70) @ 700: uvm_test_top.testbench.env.agent.monitor [apb_monitor] Packet Collected :
+--------------------------------------------
+Name            Type        Size  Value     
+--------------------------------------------
+pkt             apb_packet  -     @3765     
+  paddr         integral    9     'he3      
+  pwrite        integral    1     'h1       
+  pwdata        integral    32    'h48fc312c
+  pready_delay  integral    32    'h0       
+  prdata        integral    32    'h0       
+  begin_time    time        64    700       
+  end_time      time        64    700       
+--------------------------------------------
+
+UVM_INFO ../sv/apb_driver.sv(45) @ 900: uvm_test_top.testbench.env.agent.driver [driver] seq_item_port.get_next_item(req);
+UVM_INFO ../sv/apb_if.sv(37) @ 900: reporter [[interface]] master_send_to_dut
+UVM_INFO ../sv/apb_monitor.sv(70) @ 1300: uvm_test_top.testbench.env.agent.monitor [apb_monitor] Packet Collected :
+--------------------------------------------
+Name            Type        Size  Value     
+--------------------------------------------
+pkt             apb_packet  -     @3858     
+  paddr         integral    9     'h1c6     
+  pwrite        integral    1     'h1       
+  pwdata        integral    32    'h1da618ad
+  pready_delay  integral    32    'h0       
+  prdata        integral    32    'h0       
+  begin_time    time        64    1300      
+  end_time      time        64    1300      
+--------------------------------------------
+
+UVM_INFO ../sv/apb_driver.sv(45) @ 1500: uvm_test_top.testbench.env.agent.driver [driver] seq_item_port.get_next_item(req);
+UVM_INFO ../sv/apb_if.sv(37) @ 1500: reporter [[interface]] master_send_to_dut
+UVM_INFO ../sv/apb_monitor.sv(70) @ 1900: uvm_test_top.testbench.env.agent.monitor [apb_monitor] Packet Collected :
+---------------------------------------------
+Name            Type        Size  Value      
+---------------------------------------------
+pkt             apb_packet  -     @3869      
+  paddr         integral    9     'h15e      
+  pwrite        integral    1     'h0        
+  pwdata        integral    32    'h1da618ad 
+  pready_delay  integral    32    'h0        
+  prdata        integral    32    'h0xxxxxxxx
+  begin_time    time        64    1900       
+  end_time      time        64    1900       
+---------------------------------------------
+
+UVM_INFO ../sv/apb_driver.sv(45) @ 2100: uvm_test_top.testbench.env.agent.driver [driver] seq_item_port.get_next_item(req);
+UVM_INFO ../sv/apb_if.sv(37) @ 2100: reporter [[interface]] master_send_to_dut
+UVM_INFO ../sv/apb_monitor.sv(70) @ 2500: uvm_test_top.testbench.env.agent.monitor [apb_monitor] Packet Collected :
+--------------------------------------------
+Name            Type        Size  Value     
+--------------------------------------------
+pkt             apb_packet  -     @3871     
+  paddr         integral    9     'h55      
+  pwrite        integral    1     'h1       
+  pwdata        integral    32    'h176bebab
+  pready_delay  integral    32    'h0       
+  prdata        integral    32    'h0       
+  begin_time    time        64    2500      
+  end_time      time        64    2500      
+--------------------------------------------
+
+UVM_INFO ../sv/apb_driver.sv(45) @ 2700: uvm_test_top.testbench.env.agent.driver [driver] seq_item_port.get_next_item(req);
+UVM_INFO ../sv/apb_if.sv(37) @ 2700: reporter [[interface]] master_send_to_dut
+UVM_INFO ../sv/apb_monitor.sv(70) @ 3100: uvm_test_top.testbench.env.agent.monitor [apb_monitor] Packet Collected :
+--------------------------------------------
+Name            Type        Size  Value     
+--------------------------------------------
+pkt             apb_packet  -     @3873     
+  paddr         integral    9     'h55      
+  pwrite        integral    1     'h0       
+  pwdata        integral    32    'h176bebab
+  pready_delay  integral    32    'h0       
+  prdata        integral    32    'h176bebab
+  begin_time    time        64    3100      
+  end_time      time        64    3100      
+--------------------------------------------
+
+UVM_INFO ../sv/apb_driver.sv(45) @ 3300: uvm_test_top.testbench.env.agent.driver [driver] seq_item_port.get_next_item(req);
+UVM_INFO /tools/cadence/XCELIUM/24.03.004/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 5200: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../sv/apb_driver.sv(86) @ 5200: uvm_test_top.testbench.env.agent.driver [apb_driver] Report: apb TX driver sent 5 packets
+UVM_INFO ../sv/apb_monitor.sv(79) @ 5200: uvm_test_top.testbench.env.agent.monitor [apb_monitor] Report: apb Monitor Collected 5 Packets
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   23
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[[interface]]     5
+[apb_base_seq]     1
+[apb_driver]     1
+[apb_monitor]     6
+[driver]     7
+Simulation complete via $finish(1) at time 520 NS + 45
+/tools/cadence/XCELIUM/24.03.004/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> ^C
+xcelium> exit
+TOOL:	xrun(64)	24.03-s004: Exiting on Nov 24, 2024 at 16:14:06 UTC  (total: 00:13:38)

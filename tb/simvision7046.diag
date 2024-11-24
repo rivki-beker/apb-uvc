@@ -1,0 +1,757 @@
+*** Message Type: info ***
+When: Tue Oct 08 07:40:17 PM UTC 2024
+SimVision started.
+Version: TOOL:  simvision(64)   24.03-s004
+User: rivkabe
+Host: ip-10-20-133-66.il-central-1.compute.internal
+Platform: Linux/x86_64/4.14.345-262.561.amzn2.x86_64
+Started: Tue Oct 08 07:40:17 PM UTC 2024
+Command: /tools/cadence/XCELIUM/24.03.004/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:ip-10-20-133-66.il-central-1.compute.internal:46331 -64BIT -nocopyright
+Work Directory: /project/uvma/users/rivkabe/ws/UVMA_v1_2_5_rev2/uvm/AMBA_APB/tb
+ 
+*** Message Type: info ***
+When: Tue Oct 08 07:40:19 PM UTC 2024
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Oct 08 07:40:20 PM UTC 2024
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Tue Oct 08 07:40:22 PM UTC 2024
+Connect to Simulator
+      Design: worklib.tb_top:sv
+   Languages: verilog assertion
+   Simulator: XM-Sim
+     Version: TOOL:        xmsim(64)       24.03-s004
+        User: rivkabe
+        Host: ip-10-20-133-66.il-central-1.compute.internal
+Time Started: Tue Oct 08 07:40:15 PM UTC 2024
+  Process ID: 6948
+   Directory: /project/uvma/users/rivkabe/ws/UVMA_v1_2_5_rev2/uvm/AMBA_APB/tb
+     Command: xrun -f run.f -gui -access rwc
+
+ 
+*** Message Type: info ***
+When: Tue Oct 08 07:40:24 PM UTC 2024
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Tue Oct 08 07:40:47 PM UTC 2024
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: error ***
+When: Tue Oct 08 07:47:07 PM UTC 2024
+property "-transattr" is not applicable to handle "@public@275"
+    while executing
+"util::expandStreamByAttr $dacH [util::expandAttrConvert name $flavor]"
+    ("***:(?i)Attr:.*" arm line 4)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "util::getExpandChildren" line 1)
+    invoked from within
+"util::getExpandChildren $signalH $flavor"
+    ("default" arm line 69)
+    invoked from within
+"switch -- $type {
+  group - overlay {
+          set group [$_tree get $id -group]
+      foreach obj [$group get -objects] {
+                switch -- [util::entity type $o..."
+    (object "::.waveWindow0.work.user.waveset" method "::WaveSet::_populate" body line 2)
+    invoked from within
+"_populate internal $id"
+    ("default" arm line 27)
+    invoked from within
+"switch -- [type $id] {
+         overlay - group {
+          # do nothing
+       }
+      transaction {
+            # TODO_ASSOCARRAY - probably nothing for assocarray..."
+    (object "::.waveWindow0.work.user.waveset" method "::WaveSet::_dbRecallCallback" body line 13)
+    invoked from within
+"::.waveWindow0.work.user.waveset _dbRecallCallback event !recall"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow0.work.user.waveset _dbRecallCallback} event !recall"
+ 
+*** Message Type: error ***
+When: Tue Oct 08 07:52:17 PM UTC 2024
+property "-transattr" is not applicable to handle "@public@ef"
+    while executing
+"util::expandStreamByAttr $dacH [util::expandAttrConvert name $flavor]"
+    ("***:(?i)Attr:.*" arm line 4)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "util::getExpandChildren" line 1)
+    invoked from within
+"util::getExpandChildren $signalH $flavor"
+    ("default" arm line 69)
+    invoked from within
+"switch -- $type {
+  group - overlay {
+          set group [$_tree get $id -group]
+      foreach obj [$group get -objects] {
+                switch -- [util::entity type $o..."
+    (object "::.waveWindow0.work.user.waveset" method "::WaveSet::_populate" body line 2)
+    invoked from within
+"_populate internal $id"
+    ("default" arm line 27)
+    invoked from within
+"switch -- [type $id] {
+         overlay - group {
+          # do nothing
+       }
+      transaction {
+            # TODO_ASSOCARRAY - probably nothing for assocarray..."
+    (object "::.waveWindow0.work.user.waveset" method "::WaveSet::_dbRecallCallback" body line 13)
+    invoked from within
+"::.waveWindow0.work.user.waveset _dbRecallCallback event !recall"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow0.work.user.waveset _dbRecallCallback} event !recall"
+ 
+*** Message Type: info ***
+When: Tue Oct 08 07:53:03 PM UTC 2024
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Tue Oct 08 07:54:14 PM UTC 2024
+Create waveform window: "Waveform 2"
+ 
+*** Message Type: error ***
+When: Tue Oct 08 07:58:29 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 14"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 14"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $undoids  -progresscommand [_getProgressCommand configure "Saving signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::delete" body line 34)
+    invoked from within
+"delete $_mappedIds"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_removeMapped" body line 3)
+    invoked from within
+"::.waveWindow1.work.user.waveset _removeMapped"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _removeMapped}"
+    (while executing background task for duty "remove-mapped" in owner ::.waveWindow1.work.user.waveset)
+ 
+*** Message Type: error ***
+When: Tue Oct 08 08:00:43 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 18"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 18"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $undoids  -progresscommand [_getProgressCommand configure "Saving signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::delete" body line 34)
+    invoked from within
+"delete $_mappedIds"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_removeMapped" body line 3)
+    invoked from within
+"::.waveWindow1.work.user.waveset _removeMapped"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _removeMapped}"
+    (while executing background task for duty "remove-mapped" in owner ::.waveWindow1.work.user.waveset)
+ 
+*** Message Type: error ***
+When: Tue Oct 08 08:00:45 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 19"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 19"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $undoids  -progresscommand [_getProgressCommand configure "Saving signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::delete" body line 34)
+    invoked from within
+"delete $_mappedIds"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_removeMapped" body line 3)
+    invoked from within
+"::.waveWindow1.work.user.waveset _removeMapped"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _removeMapped}"
+    (while executing background task for duty "remove-mapped" in owner ::.waveWindow1.work.user.waveset)
+ 
+*** Message Type: error ***
+When: Tue Oct 08 08:01:27 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 24"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 24"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $undoids  -progresscommand [_getProgressCommand configure "Saving signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::delete" body line 34)
+    invoked from within
+"delete $_mappedIds"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_removeMapped" body line 3)
+    invoked from within
+"::.waveWindow1.work.user.waveset _removeMapped"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _removeMapped}"
+    (while executing background task for duty "remove-mapped" in owner ::.waveWindow1.work.user.waveset)
+ 
+*** Message Type: error ***
+When: Tue Oct 08 08:01:30 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 26"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 26"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $undoids  -progresscommand [_getProgressCommand configure "Saving signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::delete" body line 34)
+    invoked from within
+"delete $_mappedIds"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_removeMapped" body line 3)
+    invoked from within
+"::.waveWindow1.work.user.waveset _removeMapped"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _removeMapped}"
+    (while executing background task for duty "remove-mapped" in owner ::.waveWindow1.work.user.waveset)
+ 
+*** Message Type: error ***
+When: Sun Nov 24 02:54:11 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 28"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 28"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $_dragsel  -progresscommand [_getProgressCommand configure "Capturing signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_drag" body line 32)
+    invoked from within
+"::.waveWindow1.work.user.waveset _drag SV_WAVEFORM"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}"
+    invoked from within
+"list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::WaveSet {::.wa..."
+    invoked from within
+"list {copy} [list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::W..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 $cmd"
+    (procedure "tkdnd::_init_drag" line 10)
+    invoked from within
+"tkdnd::_init_drag 0 $window  "press" 0 0"
+    ("drag" arm line 11)
+    invoked from within
+"switch $method {
+    bindtarget {
+      switch [llength $args] {
+        0 {return [tkdnd::compat::bindtarget0 $window]}
+        1 {return [tkdnd::com..."
+    (procedure "::dnd" line 4)
+    invoked from within
+"::dnd drag .waveWindow1.work.user.waveset.signallist -actions copy -id {7046 ::.waveWindow1.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "cwidgets::dnd" line 1)
+    invoked from within
+"cwidgets::dnd drag .waveWindow1.work.user.waveset.signallist -actions copy -id {7046 ::.waveWindow1.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "::svdnd" line 1)
+    invoked from within
+"::svdnd drag $win -actions {copy} -id [list [pid] $this]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_delayedStartDND" body line 35)
+    invoked from within
+"::.waveWindow1.work.user.waveset _delayedStartDND .waveWindow1.work.user.waveset.signallist 10 76 30 1"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _delayedStartDND .waveWindow1.work.user.waveset.signallist 10 76 30 1}"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Sun Nov 24 02:54:15 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 31"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 31"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $_dragsel  -progresscommand [_getProgressCommand configure "Capturing signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_drag" body line 32)
+    invoked from within
+"::.waveWindow1.work.user.waveset _drag SV_WAVEFORM"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}"
+    invoked from within
+"list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::WaveSet {::.wa..."
+    invoked from within
+"list {copy} [list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::W..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 $cmd"
+    (procedure "tkdnd::_init_drag" line 10)
+    invoked from within
+"tkdnd::_init_drag 0 $window  "press" 0 0"
+    ("drag" arm line 11)
+    invoked from within
+"switch $method {
+    bindtarget {
+      switch [llength $args] {
+        0 {return [tkdnd::compat::bindtarget0 $window]}
+        1 {return [tkdnd::com..."
+    (procedure "::dnd" line 4)
+    invoked from within
+"::dnd drag .waveWindow1.work.user.waveset.signallist -actions copy -id {7046 ::.waveWindow1.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "cwidgets::dnd" line 1)
+    invoked from within
+"cwidgets::dnd drag .waveWindow1.work.user.waveset.signallist -actions copy -id {7046 ::.waveWindow1.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "::svdnd" line 1)
+    invoked from within
+"::svdnd drag $win -actions {copy} -id [list [pid] $this]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_delayedStartDND" body line 35)
+    invoked from within
+"::.waveWindow1.work.user.waveset _delayedStartDND .waveWindow1.work.user.waveset.signallist 10 62 29 1"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _delayedStartDND .waveWindow1.work.user.waveset.signallist 10 62 29 1}"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Sun Nov 24 02:54:18 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 33"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 33"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $_dragsel  -progresscommand [_getProgressCommand configure "Capturing signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_drag" body line 32)
+    invoked from within
+"::.waveWindow1.work.user.waveset _drag SV_WAVEFORM"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}"
+    invoked from within
+"list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::WaveSet {::.wa..."
+    invoked from within
+"list {copy} [list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::W..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 $cmd"
+    (procedure "tkdnd::_init_drag" line 10)
+    invoked from within
+"tkdnd::_init_drag 0 $window  "press" 0 0"
+    ("drag" arm line 11)
+    invoked from within
+"switch $method {
+    bindtarget {
+      switch [llength $args] {
+        0 {return [tkdnd::compat::bindtarget0 $window]}
+        1 {return [tkdnd::com..."
+    (procedure "::dnd" line 4)
+    invoked from within
+"::dnd drag .waveWindow1.work.user.waveset.signallist -actions copy -id {7046 ::.waveWindow1.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "cwidgets::dnd" line 1)
+    invoked from within
+"cwidgets::dnd drag .waveWindow1.work.user.waveset.signallist -actions copy -id {7046 ::.waveWindow1.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "::svdnd" line 1)
+    invoked from within
+"::svdnd drag $win -actions {copy} -id [list [pid] $this]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_delayedStartDND" body line 35)
+    invoked from within
+"::.waveWindow1.work.user.waveset _delayedStartDND .waveWindow1.work.user.waveset.signallist 11 78 16 1"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _delayedStartDND .waveWindow1.work.user.waveset.signallist 11 78 16 1}"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Sun Nov 24 02:55:02 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 34"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 34"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $undoids  -progresscommand [_getProgressCommand configure "Saving signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::delete" body line 34)
+    invoked from within
+"$itk_component(waveset) delete "" $action $undo"
+    (object "::.waveWindow1" method "::WaveWindow::_doDelete" body line 26)
+    invoked from within
+"::.waveWindow1 _doDelete"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow1 _doDelete}"
+    invoked from within
+".waveWindow1.work.user.waveset.popup invoke active"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke active]"
+    (procedure "tk::MenuInvoke" line 50)
+    invoked from within
+"tk::MenuInvoke .waveWindow1.work.user.waveset.popup 1"
+    (command bound to event)
+ 
+*** Message Type: error ***
+When: Sun Nov 24 02:55:09 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 35"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 35"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $_dragsel  -progresscommand [_getProgressCommand configure "Capturing signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_drag" body line 32)
+    invoked from within
+"::.waveWindow1.work.user.waveset _drag SV_WAVEFORM"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}"
+    invoked from within
+"list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::WaveSet {::.wa..."
+    invoked from within
+"list {copy} [list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::W..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 $cmd"
+    (procedure "tkdnd::_init_drag" line 10)
+    invoked from within
+"tkdnd::_init_drag 0 $window  "press" 0 0"
+    ("drag" arm line 11)
+    invoked from within
+"switch $method {
+    bindtarget {
+      switch [llength $args] {
+        0 {return [tkdnd::compat::bindtarget0 $window]}
+        1 {return [tkdnd::com..."
+    (procedure "::dnd" line 4)
+    invoked from within
+"::dnd drag .waveWindow1.work.user.waveset.signallist -actions copy -id {7046 ::.waveWindow1.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "cwidgets::dnd" line 1)
+    invoked from within
+"cwidgets::dnd drag .waveWindow1.work.user.waveset.signallist -actions copy -id {7046 ::.waveWindow1.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "::svdnd" line 1)
+    invoked from within
+"::svdnd drag $win -actions {copy} -id [list [pid] $this]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_delayedStartDND" body line 35)
+    invoked from within
+"::.waveWindow1.work.user.waveset _delayedStartDND .waveWindow1.work.user.waveset.signallist 10 67 31 1"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _delayedStartDND .waveWindow1.work.user.waveset.signallist 10 67 31 1}"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Sun Nov 24 02:55:16 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 37"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 37"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $undoids  -progresscommand [_getProgressCommand configure "Saving signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::delete" body line 34)
+    invoked from within
+"$itk_component(waveset) delete "" $action $undo"
+    (object "::.waveWindow1" method "::WaveWindow::_doDelete" body line 26)
+    invoked from within
+"::.waveWindow1 _doDelete"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow1 _doDelete}"
+    invoked from within
+".waveWindow1.work.user.waveset.popup invoke active"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke active]"
+    (procedure "tk::MenuInvoke" line 50)
+    invoked from within
+"tk::MenuInvoke .waveWindow1.work.user.waveset.popup 1"
+    (command bound to event)
+ 
+*** Message Type: error ***
+When: Sun Nov 24 02:55:18 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 38"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 38"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $_dragsel  -progresscommand [_getProgressCommand configure "Capturing signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_drag" body line 32)
+    invoked from within
+"::.waveWindow1.work.user.waveset _drag SV_WAVEFORM"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}"
+    invoked from within
+"list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::WaveSet {::.wa..."
+    invoked from within
+"list {copy} [list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::W..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 $cmd"
+    (procedure "tkdnd::_init_drag" line 10)
+    invoked from within
+"tkdnd::_init_drag 0 $window  "press" 0 0"
+    ("drag" arm line 11)
+    invoked from within
+"switch $method {
+    bindtarget {
+      switch [llength $args] {
+        0 {return [tkdnd::compat::bindtarget0 $window]}
+        1 {return [tkdnd::com..."
+    (procedure "::dnd" line 4)
+    invoked from within
+"::dnd drag .waveWindow1.work.user.waveset.signallist -actions copy -id {7046 ::.waveWindow1.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "cwidgets::dnd" line 1)
+    invoked from within
+"cwidgets::dnd drag .waveWindow1.work.user.waveset.signallist -actions copy -id {7046 ::.waveWindow1.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "::svdnd" line 1)
+    invoked from within
+"::svdnd drag $win -actions {copy} -id [list [pid] $this]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_delayedStartDND" body line 35)
+    invoked from within
+"::.waveWindow1.work.user.waveset _delayedStartDND .waveWindow1.work.user.waveset.signallist 10 78 31 1"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _delayedStartDND .waveWindow1.work.user.waveset.signallist 10 78 31 1}"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Sun Nov 24 02:55:21 PM UTC 2024
+invalid command name "::.waveWindow0"
+    while executing
+"::.waveWindow0 progress configure -message {Capturing signals...} -percent 40"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 progress} configure -message {Capturing signals...} -percent 40"
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $_dragsel  -progresscommand [_getProgressCommand configure "Capturing signals..."]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_drag" body line 32)
+    invoked from within
+"::.waveWindow1.work.user.waveset _drag SV_WAVEFORM"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}"
+    invoked from within
+"list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::WaveSet {::.wa..."
+    invoked from within
+"list {copy} [list  {SV_WAVEFORM} [namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _drag SV_WAVEFORM}] {SV_SIGNAL} [namespace inscope ::W..."
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 $cmd"
+    (procedure "tkdnd::_init_drag" line 10)
+    invoked from within
+"tkdnd::_init_drag 0 $window  "press" 0 0"
+    ("drag" arm line 11)
+    invoked from within
+"switch $method {
+    bindtarget {
+      switch [llength $args] {
+        0 {return [tkdnd::compat::bindtarget0 $window]}
+        1 {return [tkdnd::com..."
+    (procedure "::dnd" line 4)
+    invoked from within
+"::dnd drag .waveWindow1.work.user.waveset.signallist -actions copy -id {7046 ::.waveWindow1.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "cwidgets::dnd" line 1)
+    invoked from within
+"cwidgets::dnd drag .waveWindow1.work.user.waveset.signallist -actions copy -id {7046 ::.waveWindow1.work.user.waveset}"
+    ("eval" body line 1)
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "::svdnd" line 1)
+    invoked from within
+"::svdnd drag $win -actions {copy} -id [list [pid] $this]"
+    (object "::.waveWindow1.work.user.waveset" method "::WaveSet::_delayedStartDND" body line 35)
+    invoked from within
+"::.waveWindow1.work.user.waveset _delayedStartDND .waveWindow1.work.user.waveset.signallist 11 132 10 1"
+    (in namespace inscope "::WaveSet" script line 1)
+    invoked from within
+"namespace inscope ::WaveSet {::.waveWindow1.work.user.waveset _delayedStartDND .waveWindow1.work.user.waveset.signallist 11 132 10 1}"
+    ("after" script)
+ 
+*** Message Type: info ***
+When: Sun Nov 24 02:55:29 PM UTC 2024
+Delete waveform window: "Waveform 2"
+ 
+*** Message Type: error ***
+When: Sun Nov 24 02:55:29 PM UTC 2024
+invalid command name ".waveWindow1.bottom.statusbar.indicator-autosave.autosave"
+    while executing
+".waveWindow1.bottom.statusbar.indicator-autosave.autosave configure -image image284"
+    ("after" script)
+ 
+*** Message Type: error ***
+When: Sun Nov 24 02:55:29 PM UTC 2024
+invalid command name ".waveWindow1.bottom.statusbar.indicator-autosave.autosave"
+    while executing
+".waveWindow1.bottom.statusbar.indicator-autosave.autosave configure -image image284"
+    ("after" script)
+ 
+*** Message Type: info ***
+When: Sun Nov 24 02:55:36 PM UTC 2024
+SimVision Exit.
+ 
