@@ -63,20 +63,15 @@ For this you should have simulator like Cadence Incisive/Xcelium or equivalent t
    cd tb
    ```  
 
-3. **Navigate to the Testbench Directory**  
-   ```bash
-   cd tb
-   ```  
-
-4. **Run the Simulation**  
+3. **Run the Simulation**  
    ```bash
    xrun -f run.f -gui -access rwc
    ```  
 
-5. **View the Waveforms**  
+4. **View the Waveforms**  
    Use the GUI mode to observe the waveforms and verify functionality.
 
-6. **Analyze the Coverage**  
+5. **Analyze the Coverage**  
    Functional coverage is automatically collected and reported.  
 
 ---
