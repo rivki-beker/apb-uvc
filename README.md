@@ -29,6 +29,8 @@ It is designed for:
 
 ## Waves of the Simulation
 
+![Waves of the Simulation](docs/waves.png)
+
 ---
 
 ## Features of the UVM Environment  
