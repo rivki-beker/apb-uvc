@@ -27,6 +27,10 @@ It is designed for:
 
 ---
 
+## Waves of the Simulation
+
+---
+
 ## Features of the UVM Environment  
 
 1. **Support for Both Master and Slave Verification**  
@@ -68,8 +72,7 @@ For this you should have simulator like Cadence Incisive/Xcelium or equivalent t
    ```  
 
 5. **View the Waveforms**  
-   Use the GUI mode to observe the waveforms and verify functionality:  
-   ![Waveform Example](docs/waveform.png)  
+   Use the GUI mode to observe the waveforms and verify functionality.
 
 6. **Analyze the Coverage**  
    Functional coverage is automatically collected and reported.  
